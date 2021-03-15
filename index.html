@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description of this web site">
+    <meta name="author" content="Your Name Here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAD/CIS Dashboard</title>
+
+    <!-- Bootstrap v5.0.0-beta1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">Admin Dashboard</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="images/adminpic.jpeg" width="20px" height="20px" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name"><strong>Olivia</strong>
+                            <strong>Tucker</strong>
+                        </span>
+                        <span class="user-role">Administrator</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search">
+
+                            <span class="input-group-text">
+                                <i class="fa fa-seach" aria-hidden="true"></i>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Home</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="index.html">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                                
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="customerprofiles.html">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Customer Profiles</span>
+                            </a>
+                    
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="calendar.html">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="quicklinks.html">
+                                <i class="fa fa-globe"></i>
+                                <span>Quick Links</span>
+                            </a>
+
+                        </li>
+                        <li class="header-menu">
+                            <span>Other</span>
+                        </li>
+                        <li>
+                            <a href="statusupdates.html">
+                                <i class="fa fa-book"></i>
+                                <span>Status Updates</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="logoff.html">
+                                <i class="fa fa-calendar"></i>
+                                <span>Log Off</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+        </nav>
+        
+        
+        
+        
+        
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <div class="container-fluid">
+                <h2>Green Valley Auction Dashboard</h2>
+                <hr>
+
+                <!--Top of page 3 function buttons-->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="dbox dbox--color-1">
+                                <div class="dbox__icon">
+                                    <i class="glyphicon glyphicon-cloud"></i>
+                                </div>
+                                <div class="dbox__body">
+                                    <span class="dbox__count">Calendar</span>
+                                    <span class="dbox__title"> To Calendar</span>
+                                </div>
+
+                                <div class="dbox__action">
+                                    <button class="dbox__action__btn"><a href="calendar.html">Check Calendar</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dbox dbox--color-2">
+                                <div class="dbox__icon">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                </div>
+                                <div class="dbox__body">
+                                    <span class="dbox__count">New Customer</span>
+                                    <span class="dbox__title">Personal Details</span>
+                                </div>
+
+                                <div class="dbox__action">
+                                    <button class="dbox__action__btn"><a href="customerprofiles.html">Add New Customer</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dbox dbox--color-3">
+                                <div class="dbox__icon">
+                                    <i class="glyphicon glyphicon-heart"></i>
+                                </div>
+                                <div class="dbox__body">
+                                    <span class="dbox__count">Today's Status Updates</span>
+                                    <span class="dbox__title">Check Notifications</span>
+                                </div>
+
+                                <div class="dbox__action">
+                                    <button class="dbox__action__btn"><a href="statusupdates.html">Updates</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Customer profile Table-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#000</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>111-222-3334</td>
+                            <td>400 Main Street</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#0001</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>111-222-3334</td>
+                            <td>400 Main Street</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#0002</th>
+                            <td>Joe</td>
+                            <td>Hello</td>
+                            <td>111-222-3334</td>
+                            <td>400 Main Street</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#0003</th>
+                            <td>Olivia</td>
+                            <td>Tucker</td>
+                            <td>111-222-3334</td>
+                            <td>400 Main Street</td>
+                            
+                            <tr>
+                            <th scope="row">#0004</th>
+                            <td>Seen</td>
+                            <td>Thornton</td>
+                            <td>111-222-3334</td>
+                            <td>400 Main Street</td>
+                            
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            
+ 
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+
+
+<!--using a hosted version of p5.js-->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+<script src="js/customorders.js"></script>
